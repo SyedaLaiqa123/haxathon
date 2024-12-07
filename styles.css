@@ -1,0 +1,193 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Links */
+header nav a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #1e88e5;
+}
+
+/* Get Started Button */
+header .get-started {
+    padding: 10px 20px;
+    background-color: #0066ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Main Intro Section */
+.intro {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e8f0ff;
+}
+
+.intro h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.intro p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Content Section */
+.content {
+    display: flex;
+    padding: 40px;
+    gap: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 25%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Content */
+.main-content {
+    width: 75%;
+}
+
+/* Blog Posts */
+#posts div {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#posts div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Separator Line */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 15px 0;
+}
+
+/* Newsletter Section */
+.newsletter {
+    text-align: center;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Newsletter Form */
+.newsletter input[type="email"],
+.newsletter button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.newsletter input[type="email"] {
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+}
+
+.newsletter button {
+    background-color: #0066ff;
+    color: #fff;
+    border: none;
+}
+
+/* Active Navigation Link */
+nav a.active {
+    color: #ff9800;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+
+/* For tablets and smaller screens */
+@media (max-width: 200px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+}
+
+/* Fully Mobile-First Adjustments */
+@media (max-width: 600px) {
+    header {
+        padding: 15px;
+    }
+
+    .intro h1 {
+        font-size: 28px;
+    }
+
+    .content {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar,
+    .main-content {
+        width: 100%;
+    }
+
+    .newsletter input[type="email"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .newsletter button {
+        width: 100%;
+    }
+
+    #posts div {
+        padding: 15px;
+    }
+
+    #posts h2 {
+        font-size: 24px;
+    }
+
+    #posts p {
+        font-size: 16px;
+    }
+}
